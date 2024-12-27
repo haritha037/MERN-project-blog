@@ -22,6 +22,8 @@ module.exports = {
   },
 };
 
+console.log("Running connect.js");
+
 /*
 async function run() {
   try {
