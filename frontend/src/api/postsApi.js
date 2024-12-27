@@ -16,6 +16,7 @@ export async function getPostApi(id) {
   const response = await axios.get(`${URL}/posts/${id}`);
 
   if (response.status === 200) {
+    console.log(response);
     return response.data;
   } else {
     return;
