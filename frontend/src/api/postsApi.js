@@ -4,8 +4,8 @@ const URL = "http://localhost:3000";
 
 export async function getAllPostsApi() {
   const response = await axios.get(`${URL}/posts`);
-
   if (response.status === 200) {
+    console.log(response);
     return response.data;
   } else {
     return;

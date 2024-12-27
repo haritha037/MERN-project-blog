@@ -55,3 +55,21 @@
   color: #fff;
   padding: 1rem;
 }
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.post {
+  border: 2px solid;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+}
+
+.post:hover {
+  cursor: pointer;
+  background-color: #2c223e;
+  /* color: #313131; */
+}
