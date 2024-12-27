@@ -7,6 +7,9 @@ const connect = require("./connect");
 const express = require("express");
 const cors = require("cors");
 
+// import routes
+const postRoutes = require("./postRoutes");
+
 // Create the express application
 const app = express();
 
@@ -15,6 +18,9 @@ const PORT = 3000;
 // app.use - mount middleware
 app.use(cors()); // how to handle resources across differne domains
 app.use(express.json()); // tells express to parse requests in json format, so that we do not have to call json.parse every single time that we get a request
+
+// mount the routes
+app.use(postRoutes);
 
 app.listen(PORT, () => {
   // hook up to mongoDB
