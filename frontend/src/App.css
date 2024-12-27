@@ -66,6 +66,7 @@
   border: 2px solid;
   padding: 2rem 2rem;
   border-radius: 8px;
+  display: block;
 }
 
 .post:hover {
